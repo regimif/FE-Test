@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.home-img-container{
+}
+
+.home-img{
+    clip-path: ellipse(62% 61% at 63% 38%);
+}
