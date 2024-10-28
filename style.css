@@ -2,6 +2,9 @@
     --main-color: #fff9f9;
     --btn-color: #6609a3;
     --btn-hover: #eed810;
+    --subtitle-color: #e09d0d;
+    --circle-yel: #ec840d;
+    --circle-pur: #660cbb;
 }
 
 *{
@@ -20,6 +23,7 @@ body{
     background-color: var(--bg-color);
 }
 
+/* Header */
 header{
     display: flex;
     justify-content: space-between;
@@ -35,10 +39,13 @@ header{
     clip-path: ellipse(62% 61% at 63% 38%);
 }
 
+/* Home */
 .home{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-apresentation{
@@ -107,4 +114,60 @@ header{
 
 .home-review-site{
     font-weight: 300;
+}
+
+/* Description */
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.description-subtitle{
+    color: var(--subtitle-color);
+    font-weight: 600;
+}
+
+.description-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.description-txt{
+    padding: 2rem;
+}
+
+.description-a-visual{
+    position: relative;
+}
+
+/* Circles */
+.circle-yel {
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    background-color:var(--circle-yel);
+    clip-path: circle(50%);    
+    position: absolute;
+    left: -8rem;
+    top: -5rem;
+}
+
+.circle-pur {
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    background-color:var(--circle-pur);
+    clip-path: circle(50%);    
+    position: absolute;
+    right: -8rem;
+    top: -1rem;
 }
