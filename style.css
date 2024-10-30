@@ -374,3 +374,158 @@ footer nav{
     text-decoration: none;
     color: black;
 }
+
+
+/* Animtaions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-in-delay-1 { animation-delay: 0.3s; }
+
+
+@keyframes scaleUp{
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+.scale-up {
+    opacity: 0;
+    animation: scaleUp 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Medias */
+
+@media (min-width: 1024px) {
+    header h1{
+        display: none;
+    }
+    .header-img-container{
+        display: none;
+    }
+    /* Header */
+    .header-desktop{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 0rem 0rem 0rem 4rem;
+    }
+    
+    .header-img-container-desktop{
+        align-self: flex-start;
+        top: 0;
+        right: -10rem;
+        z-index: -1;
+        position: relative;
+    }
+
+    .header-img-desktop{
+        position: absolute;
+        right: 0;
+        top: 0;
+        clip-path: ellipse(49% 57% at 50% 30%);
+    }
+
+    .header-links{
+        display: flex;
+        gap: 3rem;
+    }
+
+    .header-link{
+        text-decoration: none;
+        color: black;
+        transition: all ease-in 0.4s;
+
+    }
+
+    .header-link:hover{
+        letter-spacing: 0.1rem;
+    }
+
+    .call-container{
+        display: flex;
+        gap: 1rem;
+    }
+
+    /* Button Desktop */
+    #desktop-button{
+        border-radius: 2rem;
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fffcea;
+        border: 2px solid var(--btn-color);
+        background-color: var(--btn-color);
+        margin-top: 1rem;
+
+        transition: all ease-in 0.1s;
+    }
+
+    #desktop-button:hover{
+        color: var(--btn-hover);
+        background-color: var(--btn-color);
+        box-shadow: 0.5rem 0.5rem 1rem 0rem #d8d8d8;
+    }
+
+    /* Home */
+    .home{
+        align-self: flex-start;
+        max-width: 800px;
+        padding: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .home h2{
+        font-size: 4rem;
+        text-align: left;
+    }
+
+    .home .button-container{
+        align-self: flex-start;
+        padding: 2rem 2rem 2rem 0rem;
+    }
+
+
+    .home-apresentation p{
+        text-align: left;
+    }
+}

@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags -->
+     <meta name="description" content="Soller Energy. Best solar panels in the world">
+     <meta name="keywords" content="solar panel, sun, energy, soller, electricity">
+     <meta name="author" content="Reginaldo Isidoro">
+
     <!-- Fonts, Icon and Style -->
+    <link rel="icon" type="image/svg" href="images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -17,6 +24,25 @@
     <!-- Header -->
     <header>
         <h1 class="logo">soller</h1>
+        <div class="header-desktop hidden">
+            <h2 class="logo">soller</h2>
+            <nav class="header-links">
+                <a class="header-link" href="">Products</a>
+                <a class="header-link" href="">Solutions</a>
+                <a class="header-link" href="">Services</a>
+                <a class="header-link" href="">Configure</a>
+            </nav>
+            <div class="call-container">
+                <i class="fa-solid fa-headset"></i>
+                <p>555 818 282</p>
+            </div>
+            <div class="button-container">
+                <button id="desktop-button">Request a Quote <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="header-img-container-desktop">
+                <img class="header-img-desktop" src="images/header.jpg" alt="Solar Panel Desktop" height="500px">
+            </div>
+        </div>
         <div class="header-img-container">
             <img class="header-img" src="images/header.jpg" alt="Solar Panel" height="300px">
         </div>
@@ -26,14 +52,14 @@
     <section class="home">
 
         <div class="home-apresentation">
-            <h2>Get the Sun to Power Your Home</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, autem.</p>
+            <h2 class="fade-in">Get the Sun to Power Your Home</h2>
+            <p class="fade-in fade-in-delay-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, autem.</p>
             <div class="button-container">
-                <button>Request a Quote <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="home-button scale-up">Request a Quote <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
 
-        <div class="home-review">
+        <div class="home-review slide-in">
             <div class="home-review-txt">
                 <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sit quaerat!"</p>
             </div>
@@ -56,7 +82,7 @@
             <h2 class="description-title">Pick the Sun</h2>
             <p class="description-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi doloremque quis voluptatem doloribus vel culpa ab debitis, reiciendis nostrum minus maiores et repellendus assumenda nihil eligendi repellat qui odio? Repellendus?</p>
             <div class="description-a-visual">
-                <img src="images/screen-yel.svg" alt="Description Computer Yellow" height="250px">
+                <img src="images/screen-yel.svg" alt="Description Computer Yellow" height="250px" loading="lazy">
                 <div class="circle-yel-1"></div>
                 <div class="circle-pur-1"></div>
             </div>
@@ -86,7 +112,7 @@
                 </div>
             </div>
             <div class="description-b-visual">
-                <img src="images/smartphone-pur.svg" alt="Description Smartphone Purple" height="500px">
+                <img src="images/smartphone-pur.svg" alt="Description Smartphone Purple" height="500px" loading="lazy">
                 <div class="circle-pur-2"></div>
             </div>
         </section>
@@ -115,7 +141,7 @@
                 </div>
             </div>
             <div class="description-c-visual">
-                <img src="images/smartphone-yel.svg" alt="Description Smartphone Yellow" height="500px">
+                <img src="images/smartphone-yel.svg" alt="Description Smartphone Yellow" height="500px" loading="lazy">
                 <div class="circle-yel-2"></div>
             </div>
             </section>
@@ -131,7 +157,7 @@
         <div class="review-container">
             <div class="review">
                 <p id="review-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloribus unde reprehenderit nemo. Deleniti eligendi recusandae dolor expedita ratione nobis sit amet cum omnis at.</p>
-                <img id="prs2" src="images/prs2.jpg" alt="Person 2" height="80px">
+                <img id="prs2" src="images/prs2.jpg" alt="Person 2" height="80px" loading="lazy">
                 <div id="person-name">Maicon Jackson</div>
                 <div id="usage-pack">11KWh</div>
             </div>
@@ -147,7 +173,7 @@
         <button class="call-to-action-button">Request a Quote <i class="fa-solid fa-arrow-right"></i></button>
         <p class="call-to-action-txt-call">Lorem ipsum dolor sit amet consectetur.</p>
         <div class="call-to-action-visual">
-            <img id="bottom-img" src="images/multi-yel.svg" alt="Multi Screen Purple" height="200px">
+            <img id="bottom-img" src="images/multi-yel.svg" alt="Multi Screen Purple" height="200px" loading="lazy">
             <div class="circle-vio"></div>
         </div>
     </section>
@@ -155,7 +181,7 @@
 
     <footer>
         <div class="company-identifier">
-            <img id="logo" src="images/logo.svg" alt="Logo Footer" height="60px">
+            <img id="logo" src="images/logo.svg" alt="Logo Footer" height="60px" loading="lazy">
             <p>Soller</p>
         </div>
         <p>@ 2024 Soller, Inc. All rights reserved.</p>
