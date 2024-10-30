@@ -2,8 +2,8 @@
     --main-color: #fff9f9;
     --btn-color: #6609a3;
     --btn-hover: #eed810;
-    --subtitle-color: #face0b;
-    --circle-yel-1: #ec840d;
+    --subtitle-color: #f88e04;
+    --circle-yel-1: #ec9e0d;
     --circle-yel-2: #ffd620;
     --circle-pur: #660cbb;
     --circle-vio: #a352f0;
@@ -532,5 +532,40 @@ footer nav{
 
     .home-apresentation p{
         text-align: left;
+    }
+
+    /* Description */
+    .description-subtitle{
+        font-size: 1.5rem;
+    }
+
+    .description-title{
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    #description-a-txt{
+        justify-self: center;
+        font-size: 1.2rem;
+        width: 800px;
+    }
+
+    .description-a-visual img{
+        height: 800px;
+        box-shadow: 0rem 0.1rem 0.2rem 0.1rem #dbdbdb;
+    }
+    
+    .description-a-visual .circle-yel-1{
+        height: 700px;
+        width: 700px;
+        left: -30rem;
+        top: -10rem;
+    }
+
+    .description-a-visual .circle-pur-1{
+        height: 650px;
+        width: 650px;
+        right: -25rem;
+        top: 5rem;
     }
 }
