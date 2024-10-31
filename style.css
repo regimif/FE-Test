@@ -6,7 +6,7 @@
     --circle-yel-1: #ec9e0d;
     --circle-yel-2: #ffd620;
     --circle-pur: #5d08ac;
-    --circle-vio: #a352f0;
+    --circle-vio: #b66dfa;
     --call-to-action-color: #660cbb;
     --call-to-action-button: #ffd82d;
     --call-to-action-button-hover: #7a4407;
@@ -698,4 +698,64 @@ footer nav{
         margin-right: 1rem;
     }
 
+
+    /* Last Call Action */
+    .last-call-action-desktop{
+        padding: 4rem;
+        z-index: 1;
+        background: #8a23eb;
+
+    }
+
+    .last-call-action-desktop-top{
+        display: flex;
+    }
+
+    .last-call-action-desktop-txt{
+        text-align: left;
+        padding-left: 8rem;
+    }
+
+    #bottom-img{
+        height: 600px;
+    }
+
+    .last-call-action-desktop-button button{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .call-to-action-txt-call{
+        padding-top: 2rem;
+        font-weight: 500;
+    }
+
+    .circle-vio{
+        height: 600px;
+        width: 600px;
+        top: -16rem;
+        right: -32rem;
+        z-index: -1;
+        clip-path: ellipse(50% 50% at 50% 50%);
+
+    }
+
+    /* Footer */
+    footer{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 2rem 1rem 2rem;
+        justify-content: space-between;
+
+    }
+    #rights{
+        min-width: 400px;
+        margin-right: auto;
+    }
+
+    .footer-links{
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+        max-width: 400px
+    }
 }
